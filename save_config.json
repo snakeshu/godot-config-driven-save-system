@@ -1,0 +1,55 @@
+{
+  "save_version": "1.0",
+  "objects": {
+	"Player": {
+	  "node_group": "saveable",
+	  "node_name": "Player",
+	  "is_dynamic": false,
+	  "properties": [
+		{
+		  "name": "position",
+		  "path": "global_position"
+		},
+				{
+		  "name": "facing_left",
+		  "path": "get_child(0).flip_h"
+		}
+	  ]
+	},
+	"Box": {
+	  "node_group": "Box",
+	  "scene_path": "res://box.tscn",
+	  "is_dynamic": true,
+	  "properties": [
+		{
+		  "name": "position",
+		  "path": "global_position"
+		},
+		{
+		  "name": "rotation",
+		  "path": "rotation"
+		},
+		{
+		  "name": "linear_velocity",
+		  "path": "linear_velocity"
+		},
+		{
+		  "name": "angular_velocity",
+		  "path": "angular_velocity"
+		},
+		{
+		  "name": "sleeping",
+		  "path": "sleeping"
+		},
+		{
+		  "name": "sprite_modulate",
+		  "path": "get_child(1).modulate"
+		},
+		{
+		  "name": "sprite_scale",
+		  "path": "get_child(1).scale"
+		}
+	  ]
+	}
+  }
+}
